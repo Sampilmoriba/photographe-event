@@ -9,7 +9,6 @@ $(document).ready(function() {
 
     // Fonction pour ouvrir la modale
     function openModal() {
-        modaleOverlay.fadeIn(300); 
         modaleOverlay.css('display', 'flex');
     }
 
@@ -18,4 +17,10 @@ $(document).ready(function() {
         modaleOverlay.css('display', 'none');
     }
 
+    // Ajoute des écouteurs d'événements aux boutons
+    boutonContact.click(openModal);
+    boutonContact2.click(openModal);
+
+    // Ajoute un écouteur d'événements pour fermer la modale
+    modaleOverlay.click(closeModal);
 });
