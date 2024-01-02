@@ -1,10 +1,9 @@
-
 .menu-menu-du-footer-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   
+
     list-style-type: none;
     font-size: 16px;
 }
@@ -14,7 +13,11 @@
     justify-content: space-between;
     gap: 100px;
     list-style-type: none;
-    
+}
+
+.menu-menu-du-footer-container #menu-menu-du-footer a {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 #menu-menu-du-footer li {
